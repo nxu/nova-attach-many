@@ -22,6 +22,7 @@ class FieldServiceProvider extends ServiceProvider
         });
 
         Nova::serving(function (ServingNova $event) {
+            Nova::style('nova-attach-many', __DIR__.'/../../dist/js/field.css');
             Nova::script('nova-attach-many', __DIR__.'/../../dist/js/field.js');
         });
     }
